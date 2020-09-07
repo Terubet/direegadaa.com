@@ -4,10 +4,8 @@
             <a class="navbar-item" href="/">
                 <img src="/assets/images/logo1.png" style="height:108px; width:40px" alt="terubet logo">
             </a>
-
-                    </div>
-
             </div>
+        </div>
 </nav>
 
 <br><br>
@@ -18,30 +16,34 @@
         <div class="column is-8-tablet is-6-desktop is-4-widescreen">
             <div class="box">
                 <div class="card-content">
-                    <form action="/login" method="post" class="form-signin">
-
-                      <input type="hidden" name="_csrf_token" value="O5D2RfFTugmFIUAMDvKU3DRyuZIOU6raV-eVG2brIvs">
+                    <div class="form-signin">
+                    <div [formGroup]='login_form'>
+                     <input type="hidden" name="_csrf_token" value="O5D2RfFTugmFIUAMDvKU3DRyuZIOU6raV-eVG2brIvs">
                       <h2 class="title has-text-centered is-size-3">Terubet.com <br> login</h2>
-                        <div class="field">
-                            <label class="label" for="email">Email address</label>
+
+                      <div class="field" >
+                            <label class="label" for="usr">Email address</label>
                             <div class="control">
-                                <input class="input" type="email" id="email" name="_username" required="required" placeholder="E-mail" value="">
+                                <input class="input" formControlName="email" type="text" id="usr" required="required" placeholder="E-mail">
                             </div>
                         </div>
 
                         <div class="field">
-                            <label class="label" for="password">Password</label>
-                            <input class="input" type="password" id="password" name="_password" required="required" placeholder="Password">
+                            <label class="label" for="pwd">Password</label>
+                            <input class="input" formControlName="password" type="password" id="pwd"  required="required" placeholder="Password">
                         </div>
+                    </div>
+                        <app-notification message = "message" ></app-notification><br>
                         <div class="field">
-                            <button class="button is-medium is-primary is-fullwidth" type="submit">Log in</button>
-                        </div>
-                                                <div class="field has-text-centered">
-                            <a href="/password/request" class="text-muted">Forgot password?</a>
+                            <!-- <button class="button is-medium is-primary is-fullwidth" type="submit" (click)="login()" value="Login">Log in</button> -->
+                        <input [disabled]="login_form.invalid" type="button" class="button is-medium is-primary is-fullwidth" (click)="login()" value="Login">
+                          </div>
+                          <div class="field has-text-centered">
+                            <a href="forgetpassword" class="text-muted">Forgot password?</a>
                             <small class="text-muted mx-1 d-none d-md-inline">&nbsp;|&nbsp;</small>
                             <a href="/signup" class="text-muted d-block d-md-inline mt-2">Create an account</a>
                         </div>
-                          </form>
+                          </div>
                 </div>
             </div>
         </div>
