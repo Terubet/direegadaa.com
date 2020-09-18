@@ -26,6 +26,8 @@ export class AdminLoginComponent implements OnInit {
     this.auteservice.GetUserLogin().subscribe((resp:any)=>{
       console.log(resp);
     })
+
+    
   }
   // send login api request
   login() {

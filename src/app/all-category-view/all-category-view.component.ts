@@ -10,6 +10,7 @@ export class AllCategoryViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -22,6 +22,11 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { RecentProductComponent } from './recent-product/recent-product.component';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { AllCategoryViewComponent } from './all-category-view/all-category-view.component';
+import { OurServiceComponent } from './our-service/our-service.component';
+import { ProductDetialComponent } from './product-detial/product-detial.component';
+import { HeaderComponent } from './header/header.component';
+import { ElectronicComponent } from './electronic/electronic.component';
+
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -45,6 +50,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     RecentProductComponent,
     ProductViewComponent,
     AllCategoryViewComponent,
+    OurServiceComponent,
+    ProductDetialComponent,
+    HeaderComponent,
+    ElectronicComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +62,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     ReactiveFormsModule,
     SwiperModule,
+   
   ],
   providers: [
     {
