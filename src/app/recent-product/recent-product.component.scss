@@ -75,21 +75,21 @@ img {
 
 .product-img{
   width: auto;
-  height: 200px;
+ 
 }
 
 
 .shop-card {
 
-  width: 300px;
+  width: 100%;
   background: #f5f5f5;
   box-shadow: 0 10px 20px rgba(0,0,0,.3);
   overflow: hidden;
   border-radius: 5px;
-  padding: 25px;
+  padding: 0px;
   text-align: center;
   z-index: 2;
-  height: 300px;
+  height: 200px;
   figure {
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ img {
     outline: none!important;
 
     & img {
-      margin: -95px 0 -60px;
+      margin: 0px 0 0px;
       width: 100%;
     }
   }
@@ -115,6 +115,30 @@ img {
     opacity: .6;
     margin-bottom: 3px;
   }
+
+
+.card {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	img {
+		width: 100%;
+	}
+}
+
+[class*="row"] {
+	margin-bottom: 1em;
+  justify-content: center;
+}
+
+[class*="col-"] {
+	background: #efefef;
+	border: 1px solid #ddd;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	width: 100%;
+}
+
+
 
   .cta {
     padding: 20px 20px 5px;

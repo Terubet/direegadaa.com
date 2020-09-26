@@ -1,0 +1,164 @@
+.container{
+ background-color: rgb(250, 183, 0);
+ max-width: 100%;
+
+}
+.level{
+  margin: 0px;
+}
+
+.mobile-icons
+{
+  margin-right: 10px;
+}
+.button{
+  background-color: rgb(250, 183, 0);
+}
+.subtitle{
+  margin: 30px;
+}
+.notification{
+border-radius: 0px;
+}
+ul.product-categories,
+ul.product-categories ul.children {
+  list-style:none;
+  padding:0;
+  margin-left:10px;
+}
+ul.product-categories {
+  width:250px;
+  background:#efefef;
+}
+ul.product-categories li {
+  padding:5px 0 5px 10px;
+  border-top:1px solid #dbdbdb;
+  border-bottom:1px solid #dbdbdb;
+}
+ul.children li:last-child {
+  border-bottom:none;
+}
+li.cat-parent ul.children {
+  display:none;
+}
+li.cat-parent ul.children.active {
+  display:block;
+}
+ul.children.active li:first-child {
+  border-top: none;
+}
+span.dropDownMenu {
+  float:right;
+  padding: 0 15px;
+  -webkit-transform: rotate(180deg) ;
+  -moz-transform: rotate(180deg) ;
+  -o-transform: rotate(180deg) ;
+  -ms-transform: rotate(180deg) ;
+  transform: rotate(180deg) ;
+  cursor:pointer;
+}
+span.dropDownMenu.active {
+  -webkit-transform: rotate(0deg) ;
+  -moz-transform: rotate(0deg) ;
+  -o-transform: rotate(0deg) ;
+  -ms-transform: rotate(0deg) ;
+  transform: rotate(0deg) ;
+}
+@media screen and (min-width: 600px){
+.logo-img{
+  width: 70px;
+  margin: auto;
+}
+.input{
+  width: 500px;
+}
+.button{
+
+}
+}
+
+@media screen and (max-width: 600px) {
+.container{
+ background-color: rgb(250, 183, 0);
+ max-width: 100%;
+}
+.level{
+  margin: 0px;
+}
+
+.mobile-icons
+{
+  margin-right: 5px;
+}
+.button{
+  background-color: rgb(250, 183, 0);
+}
+.subtitle{
+  margin: 30px;
+}
+.notification{
+border-radius: 0px;
+}
+ul.product-categories,
+ul.product-categories ul.children {
+  list-style:none;
+  padding:0;
+  margin-left:10px;
+}
+ul.product-categories {
+  width:250px;
+  background:#efefef;
+}
+ul.product-categories li {
+  padding:5px 0 5px 10px;
+  border-top:1px solid #dbdbdb;
+  border-bottom:1px solid #dbdbdb;
+}
+ul.children li:last-child {
+  border-bottom:none;
+}
+li.cat-parent ul.children {
+  display:none;
+}
+li.cat-parent ul.children.active {
+  display:block;
+}
+ul.children.active li:first-child {
+  border-top: none;
+}
+span.dropDownMenu {
+  float:right;
+  padding: 0 15px;
+  -webkit-transform: rotate(180deg) ;
+  -moz-transform: rotate(180deg) ;
+  -o-transform: rotate(180deg) ;
+  -ms-transform: rotate(180deg) ;
+  transform: rotate(180deg) ;
+  cursor:pointer;
+}
+span.dropDownMenu.active {
+  -webkit-transform: rotate(0deg) ;
+  -moz-transform: rotate(0deg) ;
+  -o-transform: rotate(0deg) ;
+  -ms-transform: rotate(0deg) ;
+  transform: rotate(0deg) ;
+}
+
+.logo-img{
+  width: 50px;
+  margin: auto;
+  visibility: hidden;
+}
+.input{
+margin-top: -110px;
+width: 150px
+}
+.button{
+  margin-top: -110px;
+}
+.level-right{
+  margin-top: -100px;
+  margin-left: 60%;
+  margin-bottom: 5px;
+}
+}

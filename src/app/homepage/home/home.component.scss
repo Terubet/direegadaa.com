@@ -1,74 +1,61 @@
 
-button.back-to-top{
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #fff;
-	height: 0px;
-  width: 0px;
-  overflow: hidden;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-  color: transparent;
-	clear: both;
-  visibility: hidden;
-  position: fixed;
-  cursor: pointer;
-  display: block;
-  border: none;
-  right: 50px;
-	bottom: 75px;
-  font-size: 0px;
-  outline: 0 !important;
-  z-index: 99;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-button.back-to-top:hover,button.back-to-top:active,button.back-to-top:focus{
-  outline: 0 !important;
-}
-button.back-to-top::before,button.back-to-top::after {
-  content: "";
-    display: block;
-    vertical-align: middle;
-    border-bottom: solid 10px #EA5D5F;
-    border-left: solid 10px transparent;
-    line-height: 0;
-    border-right: solid 10px transparent;
-    height: 0;
-    margin: 18px auto 0;
-    width: 0;
-  border-radius:20px;
-  visibility: hidden;
-}
-button.back-to-top.show::after,
-button.back-to-top.show::before{
-  visibility: visible;
-}
-button.back-to-top::after {
-  border-bottom-color:#fff;
-      position: relative;
-  top:-24px;
-}
-button.back-to-top.show {
-  display: block;
-  background: #fff;
-  color: #00ab6c;
-  font-size: 25px;
-  right: 25px;
-	bottom: 50px;
-  height: 50px;
-  width: 50px;
-  visibility: visible;
-	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-}
-button.back-to-top.show:active {
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-}
 
-
+/*======================================
+   Start Small Banner CSS
+========================================*/
+.small-banner{
+	padding:30px 0;
+	padding-bottom:0;
+}
+.small-banner .single-banner {
+	overflow:hidden;
+	position:relative;
+}
+.small-banner .single-banner img{
+	height:100%;
+	width:100%;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.small-banner .single-banner .content {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 35px;
+}
+.small-banner .single-banner h3 {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #333;
+}
+.small-banner .single-banner h3 span{
+	color:#F7941D;
+}
+.small-banner .single-banner p {
+	font-size: 14px;
+	color: #F7941D;
+	font-weight: 500;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+.small-banner .single-banner a {
+	color: #333;
+	margin-top: 22px;
+	display: block;
+	font-size: 12px;
+	font-weight:500;
+	display: inline-block;
+	text-transform:uppercase;
+	border-bottom:2px solid #333;
+}
+.small-banner .single-banner a:hover{
+	color:#F7941D;
+	border-color:#F7941D;
+}
+/*======================================
+   End Small Banner CSS
+========================================*/
 
